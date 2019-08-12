@@ -1,17 +1,19 @@
 # README
 
-# stock_assesment_rmd_templates
+# stock_assessment_rmd_templates
 
 **************
 
-https://nmfs-fish-tools.github.io/stock_assesment_rmd_templates/
+https://nmfs-fish-tools.github.io/stock_assessment_rmd_templates/
 
 **************
 
 
 
-## This is a repository for the Stock Assesment Tool: stock_assesment_rmd_templates
+## This is a repository for the Stock Assesment Tool: stock_assessment_rmd_templates
 - Supported by the NOAA Fisheries Integrated Toolbox
+
+
 
 
 ## Disclaimer
