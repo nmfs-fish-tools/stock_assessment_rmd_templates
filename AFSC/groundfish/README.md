@@ -3,9 +3,6 @@
 ## Initial cut is to get exec summary tables done for all tiers
 Also, contains a rough structure from SAFE report guidelines. Co-opts a single file "maintext.Rmd" as child from t1.Rmd and t3.Rmd.
 
-ToDo
+The summary table is initiated (for now) based on simple table found in data subdirectory. t3.dat is a tier 3 example, t1.dat for tier 1.
 
-  [ ] Tier 1    
-  [ ] Tier 3    
-  [ ] Tier 4-5    
-
+Tiers 4 and 5 to come...
