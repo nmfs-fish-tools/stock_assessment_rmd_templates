@@ -1,0 +1,129 @@
+
+# Introduction
+
+## General
+
+Walleye pollock (_Gadus chalcogrammus_; hereafter referred to as pollock) are
+...
+
+## Review of Life History 
+
+## Stock structure
+
+# Fishery  
+
+## Description of the directed fishery 
+
+### Catch patterns
+
+## Management measures
+
+## Economic conditions as of 2017
+
+### Pollock fillets
+
+### Pollock roe
+
+### Fish oil
+
+# Data
+The following lists the data used in this assessment: 
+
+\begin{table}[ht]
+\centering
+\label{tab:dataextent}
+\begin{tabular}{p{1.5in}p{1.8in}p{2.8in}}
+\hline
+ Source & Type & Years \\
+\hline
+ Fishery & Catch biomass & 1964--`r thisyr` \\
+ Fishery & Catch age composition & 1964--`r lastyr` \\
+ Fishery & Japanese trawl CPUE & 1965--1976 \\
+ EBS bottom trawl & Area-swept biomass and age-specific proportions & 1982--`r thisyr` \\
+ Acoustic trawl survey & Biomass index and age-specific proportions & 1994, 1996, 1997, 1999, 2000, 2002, 2004, 2006--2010, 2012, 2014, 2016, 2018 \\
+ Acoustic vessels of opportunity (AVO) & Biomass index & 2006--`r thisyr` \\
+\hline
+\end{tabular}
+\end{table}
+
+## Fishery 
+
+### Catch
+
+## Surveys
+
+### Bottom trawl survey (BTS)
+
+
+
+
+### Acoustic trawl (AT) surveys
+
+## Other time series used in the assessment
+
+### Japanese fishery CPUE index 
+
+### Biomass index from Acoustic-Vessels-of-Opportunity (AVO)
+
+
+
+#  Analytic approach
+
+##  General model structure
+
+
+## Description of alternative models
+
+
+### Input sample size
+
+
+## Parameters estimated outside of the assessment model
+
+### Natural mortality and maturity at age
+
+
+
+### Length and Weight at Age
+
+
+
+
+## Parameters estimated within the assessment model
+
+
+# Results
+## Model evaluation
+
+## Time series results
+
+## Recruitment
+
+## Retrospective analysis
+
+# Harvest recommendations
+
+## Status summary
+
+## Amendment 56 Reference Points
+
+## Specification of OFL and Maximum Permissible ABC
+
+## Standard Harvest Scenarios and Projection Methodology
+
+## Projections and status determination 
+
+## ABC Recommendation
+
+### Should the ABC be reduced below the maximum permissible ABC? 
+
+# Ecosystem considerations
+
+## Ecosystem effects on the EBS pollock stock 
+
+## EBS pollock fishery effects on the ecosystem. 
+
+# Data gaps and research priorities
+
+# Acknowledgements
+
