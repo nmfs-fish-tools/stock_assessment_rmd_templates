@@ -11,14 +11,12 @@ output:
     df_print: paged
 fontsize: 11pt
 header-includes:
-  - \usepackage{fontspec}
 geometry: margin=1in
 fontfamily: mathpazo
 ---
 \pagenumbering{gobble}
 
 ```{r global_options, include=FALSE}
-
 library(knitr)
 opts_chunk$set(fig.width = 6, fig.height = 8, echo = FALSE, warning = FALSE, message = FALSE, cache=FALSE,results="asis")
 clean_cache(clean = TRUE)
@@ -33,6 +31,7 @@ lastyr  <- 2017
   t1.df         <- as.data.frame(read.table("data/t1.dat",header=TRUE))
   t1.df$Biom    <- format(t1.df$Biom,  big.mark=",",scientific=F,digits=0)
   t1.df$Fofl    <- format(t1.df$Fofl,  big.mark=",",scientific=F,digits=3)
+  t1.df$M    <- format(t1.df$M,  big.mark=",",scientific=F,digits=3)
   t1.df$Fmaxabc <- format(t1.df$Fmaxabc,  big.mark=",",scientific=F,digits=3)
   t1.df$Fabc    <- format(t1.df$Fabc,  big.mark=",",scientific=F,digits=3)
   t1.df$SSB     <- format(t1.df$SSB,  big.mark=",",scientific=F,digits=0)
@@ -110,18 +109,18 @@ spatial temporal model for  creating an alternative index
        & \multicolumn{2}{c|}{$\mathit{last}$ year for:}  & \multicolumn{2}{c}{$\mathit{this}$ year for: }               \\
         Quantity & `r thisyr`      &`r thisyr+1`   & `r thisyr+1`      &`r thisyr+2` \\ 
   \hline
- M (natural mortality rate, ages 3+) & 0.3 & 0.3 & 0.3 & 0.3 \\
-Tier & 1a & 1a & 1a & 1a \\
-Projected total (age 3+) biomass (t)  &  `r t1.df[1,1]` t &  `r t1.df[2,1]` t &  `r t1.df[3,1]` t & `r t1.df[4,1]` t \\
-Projected female spawning biomass (t) &  `r t1.df[1,2]` t &  `r t1.df[2,2]` t &  `r t1.df[3,2]` t & `r t1.df[4,2]` t \\
-$B_0$                                 &  `r t1.df[1,3]` t &  `r t1.df[2,3]` t &  `r t1.df[3,3]` t & `r t1.df[4,3]` t \\
-$B_{msy}$                             &  `r t1.df[1,4]` t &  `r t1.df[2,4]` t &  `r t1.df[3,4]` t & `r t1.df[4,4]` t \\
-$F_{OFL}$                             &  `r t1.df[1,5]`   &  `r t1.df[2,5]`   &  `r t1.df[3,5]`   & `r t1.df[4,5]`   \\
-$maxF_{ABC}$                          &  `r t1.df[1,6]`   &  `r t1.df[2,6]`   &  `r t1.df[3,6]`   & `r t1.df[4,6]`   \\
-$F_{ABC}$                             &  `r t1.df[1,7]`   &  `r t1.df[2,7]`   &  `r t1.df[3,7]`   & `r t1.df[4,7]`   \\
-$OFL$                                 &  `r t1.df[1,8]` t &  `r t1.df[2,8]` t &  `r t1.df[3,8]` t & `r t1.df[4,8]` t \\
-$maxABC$                              &  `r t1.df[1,9]` t &  `r t1.df[2,9]` t &  `r t1.df[3,9]` t & `r t1.df[4,9]` t \\
-$ABC$                                 &  `r t1.df[1,10]` t &  `r t1.df[2,10]` t & `r t1.df[3,10]` t & `r t1.df[4,10]` t \\
+$M$ (natural mortality rate)          &  `r t1.df[1,1]` t &  `r t1.df[2,1]` t &  `r t1.df[3,1]` t & `r t1.df[4,1]` t \\
+Tier                                  &  `r t1.df[1,2]` t &  `r t1.df[2,2]` t &  `r t1.df[3,2]` t & `r t1.df[4,2]` t \\
+Projected total (age 3+) biomass (t)  &  `r t1.df[1,3]` t &  `r t1.df[2,3]` t &  `r t1.df[3,3]` t & `r t1.df[4,3]` t \\
+Projected female spawning biomass (t) &  `r t1.df[1,4]` t &  `r t1.df[2,4]` t &  `r t1.df[3,4]` t & `r t1.df[4,4]` t \\
+$B_0$                                 &  `r t1.df[1,5]` t &  `r t1.df[2,5]` t &  `r t1.df[3,5]` t & `r t1.df[4,5]` t \\
+$B_{msy}$                             &  `r t1.df[1,6]` t &  `r t1.df[2,6]` t &  `r t1.df[3,6]` t & `r t1.df[4,6]` t \\
+$F_{OFL}$                             &  `r t1.df[1,7]`   &  `r t1.df[2,7]`   &  `r t1.df[3,7]`   & `r t1.df[4,7]`   \\
+$maxF_{ABC}$                          &  `r t1.df[1,8]`   &  `r t1.df[2,8]`   &  `r t1.df[3,8]`   & `r t1.df[4,8]`   \\
+$F_{ABC}$                             &  `r t1.df[1,9]`   &  `r t1.df[2,9]`   &  `r t1.df[3,9]`   & `r t1.df[4,9]`   \\
+$OFL$                                 &  `r t1.df[1,10]` t &  `r t1.df[2,10]` t &  `r t1.df[3,10]` t & `r t1.df[4,10]` t \\
+$maxABC$                              &  `r t1.df[1,11]` t &  `r t1.df[2,11]` t &  `r t1.df[3,11]` t & `r t1.df[4,11]` t \\
+$ABC$                                 &  `r t1.df[1,12]` t &  `r t1.df[2,12]` t & `r t1.df[3,12]` t & `r t1.df[4,12]` t \\
 \hline
 Status                               & 2016       & 2017       &  `r lastyr`             & `r thisyr`          \\
 \hline

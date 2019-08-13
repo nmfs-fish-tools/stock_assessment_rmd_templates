@@ -1,0 +1,370 @@
+\documentclass[11pt,]{article}
+\usepackage[]{mathpazo}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Chapter x: Assessment of the xxx Stock ~in the xxx region},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Chapter x: Assessment of the xxx Stock ~in the xxx region}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{}
+    \preauthor{}\postauthor{}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{13:53 August 13, 2019}
+
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\pagenumbering{gobble}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{centering}
+  Jane Doe, John Doe 
+\fontfamily{cmr}
+\fontsize{10}{12}
+\selectfont
+  Alaska Fisheries Science Center, National Marine Fisheries Service \\
+  National Oceanic and Atmospheric Administration \\ 
+  7600 Sand Point Way NE., Seattle, WA 98115-6349 \\
+August 13, 2019 \\
+\end{centering}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\hypertarget{executive-summary}{%
+\section{Executive summary}\label{executive-summary}}
+
+This chapter covers the \ldots{}
+
+\hypertarget{summary-of-changes-in-assessment-inputs}{%
+\subsubsection{Summary of changes in assessment
+inputs}\label{summary-of-changes-in-assessment-inputs}}
+
+Relative to last year's SAFE report, the following substantive changes
+have been made in the xxxxxxxxxxx stock assessment.
+
+\hypertarget{changes-in-the-data}{%
+\paragraph{Changes in the data}\label{changes-in-the-data}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+\item
+\end{enumerate}
+
+\hypertarget{changes-in-the-assessment-methods}{%
+\subsubsection{Changes in the assessment
+methods}\label{changes-in-the-assessment-methods}}
+
+There were no changes to the assessment model. An example application of
+a spatial temporal model for creating an alternative index
+
+\hypertarget{summary-of-xxx-results}{%
+\subsection{Summary of xxx results}\label{summary-of-xxx-results}}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lrr|rr}
+  \hline
+       & \multicolumn{2}{c|}{As estimated or $\mathit{specified}$ } & \multicolumn{2}{c}{As estimated or $\mathit{recommended}$ }  \\
+       & \multicolumn{2}{c|}{$\mathit{last}$ year for:}  & \multicolumn{2}{c}{$\mathit{this}$ year for: }               \\
+        Quantity & 2018      &2019   & 2019      &2020 \\ 
+  \hline
+$M$ (natural mortality rate)          &  0.3 t &  0.3 t &  0.3 t & 0.3 t \\
+Tier                                  &  1a t &  1a t &  1a t & 1a t \\
+Projected total (age 3+) biomass (t)  &  10,965,000 t &  10,965,000 t &  10,965,000 t & 10,965,000 t \\
+Projected female spawning biomass (t) &  3,678,000 t &  3,678,000 t &  3,678,000 t & 3,678,000 t \\
+$B_0$                                 &  5,394,000 t &  5,394,000 t &  5,394,000 t & 5,394,000 t \\
+$B_{msy}$                             &  2,042,000 t &  2,042,000 t &  2,042,000 t & 2,042,000 t \\
+$F_{OFL}$                             &  0.621   &  0.621   &  0.621   & 0.621   \\
+$maxF_{ABC}$                          &  0.466   &  0.466   &  0.466   & 0.466   \\
+$F_{ABC}$                             &  0.336   &  0.336   &  0.336   & 0.336   \\
+$OFL$                                 &  4,797,000 t &  4,797,000 t &  4,797,000 t & 4,797,000 t \\
+$maxABC$                              &  3,603,000 t &  3,603,000 t &  3,603,000 t & 3,603,000 t \\
+$ABC$                                 &  2,592,000 t &  2,592,000 t & 2,592,000 t & 2,592,000 t \\
+\hline
+Status                               & 2016       & 2017       &  2017             & 2018          \\
+\hline
+Overfishing                           & No         & n/a       & No                        & n/a                 \\
+Overfished                           & n/a         & No       & n/a                        & No                  \\
+Approaching overfished               & n/a         & No       & n/a                        & No                  \\
+\hline
+\end{tabular}
+\end{table}
+
+\hypertarget{response-to-ssc-and-plan-team-comments}{%
+\subsection{Response to SSC and Plan Team
+comments}\label{response-to-ssc-and-plan-team-comments}}
+
+\hypertarget{general-comments}{%
+\subsubsection{General comments}\label{general-comments}}
+
+In the November 2017 Plan Team minutes: "The Team recommends that
+
+\hypertarget{comments-specific-to-this-assessment}{%
+\subsubsection{Comments specific to this
+assessment}\label{comments-specific-to-this-assessment}}
+
+SSC and Plan Team 2017 minutes:
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\hypertarget{general}{%
+\subsection{General}\label{general}}
+
+Walleye pollock (\_Gadus chalcogrammus\_; hereafter referred to as
+pollock) are \ldots{}
+
+\hypertarget{review-of-life-history}{%
+\subsection{Review of Life History}\label{review-of-life-history}}
+
+\hypertarget{stock-structure}{%
+\subsection{Stock structure}\label{stock-structure}}
+
+\hypertarget{fishery}{%
+\section{Fishery}\label{fishery}}
+
+\hypertarget{description-of-the-directed-fishery}{%
+\subsection{Description of the directed
+fishery}\label{description-of-the-directed-fishery}}
+
+\hypertarget{catch-patterns}{%
+\subsubsection{Catch patterns}\label{catch-patterns}}
+
+\hypertarget{management-measures}{%
+\subsection{Management measures}\label{management-measures}}
+
+\hypertarget{economic-conditions-as-of-2017}{%
+\subsection{Economic conditions as of
+2017}\label{economic-conditions-as-of-2017}}
+
+\hypertarget{pollock-fillets}{%
+\subsubsection{Pollock fillets}\label{pollock-fillets}}
+
+\hypertarget{pollock-roe}{%
+\subsubsection{Pollock roe}\label{pollock-roe}}
+
+\hypertarget{fish-oil}{%
+\subsubsection{Fish oil}\label{fish-oil}}
+
+\hypertarget{data}{%
+\section{Data}\label{data}}
+
+The following lists the data used in this assessment:
+
+\begin{table}[ht]
+\centering
+\label{tab:dataextent}
+\begin{tabular}{p{1.5in}p{1.8in}p{2.8in}}
+\hline
+ Source & Type & Years \\
+\hline
+ Fishery & Catch biomass & 1964--2018 \\
+ Fishery & Catch age composition & 1964--2017 \\
+ Fishery & Japanese trawl CPUE & 1965--1976 \\
+ EBS bottom trawl & Area-swept biomass and age-specific proportions & 1982--2018 \\
+ Acoustic trawl survey & Biomass index and age-specific proportions & 1994, 1996, 1997, 1999, 2000, 2002, 2004, 2006--2010, 2012, 2014, 2016, 2018 \\
+ Acoustic vessels of opportunity (AVO) & Biomass index & 2006--2018 \\
+\hline
+\end{tabular}
+\end{table}
+
+\hypertarget{fishery-1}{%
+\subsection{Fishery}\label{fishery-1}}
+
+\hypertarget{catch}{%
+\subsubsection{Catch}\label{catch}}
+
+\hypertarget{surveys}{%
+\subsection{Surveys}\label{surveys}}
+
+\hypertarget{bottom-trawl-survey-bts}{%
+\subsubsection{Bottom trawl survey
+(BTS)}\label{bottom-trawl-survey-bts}}
+
+\hypertarget{acoustic-trawl-at-surveys}{%
+\subsubsection{Acoustic trawl (AT)
+surveys}\label{acoustic-trawl-at-surveys}}
+
+\hypertarget{other-time-series-used-in-the-assessment}{%
+\subsection{Other time series used in the
+assessment}\label{other-time-series-used-in-the-assessment}}
+
+\hypertarget{japanese-fishery-cpue-index}{%
+\subsubsection{Japanese fishery CPUE
+index}\label{japanese-fishery-cpue-index}}
+
+\hypertarget{biomass-index-from-acoustic-vessels-of-opportunity-avo}{%
+\subsubsection{Biomass index from Acoustic-Vessels-of-Opportunity
+(AVO)}\label{biomass-index-from-acoustic-vessels-of-opportunity-avo}}
+
+\hypertarget{analytic-approach}{%
+\section{Analytic approach}\label{analytic-approach}}
+
+\hypertarget{general-model-structure}{%
+\subsection{General model structure}\label{general-model-structure}}
+
+\hypertarget{description-of-alternative-models}{%
+\subsection{Description of alternative
+models}\label{description-of-alternative-models}}
+
+\hypertarget{input-sample-size}{%
+\subsubsection{Input sample size}\label{input-sample-size}}
+
+\hypertarget{parameters-estimated-outside-of-the-assessment-model}{%
+\subsection{Parameters estimated outside of the assessment
+model}\label{parameters-estimated-outside-of-the-assessment-model}}
+
+\hypertarget{natural-mortality-and-maturity-at-age}{%
+\subsubsection{Natural mortality and maturity at
+age}\label{natural-mortality-and-maturity-at-age}}
+
+\hypertarget{length-and-weight-at-age}{%
+\subsubsection{Length and Weight at
+Age}\label{length-and-weight-at-age}}
+
+\hypertarget{parameters-estimated-within-the-assessment-model}{%
+\subsection{Parameters estimated within the assessment
+model}\label{parameters-estimated-within-the-assessment-model}}
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\hypertarget{model-evaluation}{%
+\subsection{Model evaluation}\label{model-evaluation}}
+
+\hypertarget{time-series-results}{%
+\subsection{Time series results}\label{time-series-results}}
+
+\hypertarget{recruitment}{%
+\subsection{Recruitment}\label{recruitment}}
+
+\hypertarget{retrospective-analysis}{%
+\subsection{Retrospective analysis}\label{retrospective-analysis}}
+
+\hypertarget{harvest-recommendations}{%
+\section{Harvest recommendations}\label{harvest-recommendations}}
+
+\hypertarget{status-summary}{%
+\subsection{Status summary}\label{status-summary}}
+
+\hypertarget{amendment-56-reference-points}{%
+\subsection{Amendment 56 Reference
+Points}\label{amendment-56-reference-points}}
+
+\hypertarget{specification-of-ofl-and-maximum-permissible-abc}{%
+\subsection{Specification of OFL and Maximum Permissible
+ABC}\label{specification-of-ofl-and-maximum-permissible-abc}}
+
+\hypertarget{standard-harvest-scenarios-and-projection-methodology}{%
+\subsection{Standard Harvest Scenarios and Projection
+Methodology}\label{standard-harvest-scenarios-and-projection-methodology}}
+
+\hypertarget{projections-and-status-determination}{%
+\subsection{Projections and status
+determination}\label{projections-and-status-determination}}
+
+\hypertarget{abc-recommendation}{%
+\subsection{ABC Recommendation}\label{abc-recommendation}}
+
+\hypertarget{should-the-abc-be-reduced-below-the-maximum-permissible-abc}{%
+\subsubsection{Should the ABC be reduced below the maximum permissible
+ABC?}\label{should-the-abc-be-reduced-below-the-maximum-permissible-abc}}
+
+\hypertarget{ecosystem-considerations}{%
+\section{Ecosystem considerations}\label{ecosystem-considerations}}
+
+\hypertarget{ecosystem-effects-on-the-ebs-pollock-stock}{%
+\subsection{Ecosystem effects on the EBS pollock
+stock}\label{ecosystem-effects-on-the-ebs-pollock-stock}}
+
+\hypertarget{ebs-pollock-fishery-effects-on-the-ecosystem.}{%
+\subsection{EBS pollock fishery effects on the
+ecosystem.}\label{ebs-pollock-fishery-effects-on-the-ecosystem.}}
+
+\hypertarget{data-gaps-and-research-priorities}{%
+\section{Data gaps and research
+priorities}\label{data-gaps-and-research-priorities}}
+
+\hypertarget{acknowledgements}{%
+\section{Acknowledgements}\label{acknowledgements}}
+
+
+\end{document}
